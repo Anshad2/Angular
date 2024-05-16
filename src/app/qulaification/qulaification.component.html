@@ -1,0 +1,36 @@
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="mb-4">My Education</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative ex-me mb-4" *ngFor="let edu of educations">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                        <h5 class="font-weight-bold mb-1">{{edu.name}}</h5>
+                        <p class="mb-2"><strong>{{edu.university}}</strong> | <small>{{edu.year}}</small></p>
+                        <p>{{edu.description}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">My Certification</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative ex-me mb-4" *ngFor="let cer of certifications" >
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                        <h5 class="font-weight-bold mb-1">{{cer.name}}</h5>
+                        <p class="mb-2"><strong>{{cer.company}}</strong> | <small>{{cer.grade}}</small></p>
+                        <p>{{cer.description}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Qualification End -->
+

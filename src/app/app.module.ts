@@ -7,6 +7,11 @@ import { HeroComponent } from './hero/hero.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { SkillComponent } from './skill/skill.component';
+import { QulaificationComponent } from './qulaification/qulaification.component';
+import { ServicesComponent } from './services/services.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimoniComponent } from './testimoni/testimoni.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { SkillComponent } from './skill/skill.component';
     HeroComponent,
     NavbarComponent,
     AboutComponent,
-    SkillComponent
+    SkillComponent,
+    QulaificationComponent,
+    ServicesComponent,
+    PortfolioComponent,
+    TestimoniComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
